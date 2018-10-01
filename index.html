@@ -1,25 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>varun Portfolio</title>
+	<title>Portfolio</title>
 	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" type="text/css" href="style/style.css">
-  	
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<!-- Favicon or touch icons -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<!-- Bootstrap cdn and other required cdn -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+	<!-- SCRIPT -->
+	<script>
+		$(document).ready(function(){
+		  $(".foot a, .navbar a, footer a[href='#myNav']").on('click', function(event) {
+		  if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+			  scrollTop: $(hash).offset().top
+			}, 900, function(){
+			  window.location.hash = hash;
+			  });
+			}
+		  });
+		})
+	</script>
+	<!-- SCRIPT ENDS -->
 </head>
-<body>
-	<div class="jumbotron text-center">
-		<h1>Under Construction !!</h1>
+
+<body class="design-body-img" id="home">
+
+		<!-- ON START MODAL -->
+		<script type="text/javascript">
+	    $(window).on('load',function(){
+	        $('#myModal').modal('show');
+	    });
+	</script>
+  	<div class="modal fade" id="myModal" role="dialog">
+    	<div class="modal-dialog">
+    		<!-- MODAL CONTENT -->
+	      	<div class="modal-content">
+	        	<div class="modal-header">
+	          		<button type="button" class="close" data-dismiss="modal">&times;</button>
+	         	 	<h4 class="modal-title">Under Construction</h4>
+	        	</div>
+	        	<div class="modal-body">
+	          		<h3>NOT WORKING ON MOBILES & OTHER SMALL DEVICES</h3>
+	          		<p>Ensure that you are opeing in PC or Desktop<br>
+	          			preferable browsers <mark> Mozilla FireFox, Google Chrome, Safari</mark></p>
+	        	  	<h3>Will work on Responses in next Update</h3>
+	        	</div>
+	        	<div class="modal-footer">
+	        	  	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        	</div>
+	      	</div>
+    	</div>
+  	</div>
+  	<!-- ON START MODAL ENDS -->
+
+	<!-- NAVBAR STARTS HERE -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" >
+		<div class="container-fluid" > 
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>					
+				</button>
+				<a class="navbar-brand" href="#home">Porfolio</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNav">
+				<ul class="nav navbar-nav">										
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li ><a href="#skills">SKILLS</a></li>
+					<li ><a href="#bout">ABOUT ME</a></li>
+					<li ><a href=" ">RESUME</a></li>
+					<li ><a href="#mee">CONTACT ME</a></li>
+      			</ul>
+			</div>			
+		</div>		
+	</nav>
+	<!-- NAVBAR ENDS -->
+
+   <!-- HOME PAGE -->
+	<div class="container-fluid " style="padding-top: 100px; height: 100vh; ">
+		<div class="row ">
+			<div class="col-lg-4"></div>
+				<div class="col-lg-4 col-md-3 col-sm-3 col-xs-3">
+					<div class="panel " style="background-color: transparent; box-shadow: 0px 0px;">
+						<div class="panel-heading">
+							<center>
+								<img src="images/profileIco.gif" class="img-responsive img-circle design-profile-img">
+							</center>
+						</div>			
+						<div class="panel-body text-center" >
+							<h2><kbd class="design-profile-txt">Every #pro was once a #noob.<br> Howdy! I'm Varun </kbd></h2>
+						</div>
+					</div>
+				</div>
+			<div class="col-lg-4"></div>
+		</div>	
 	</div>
-	<div class="container text-center">
-		<h3 >
-			I'm Varun Tanwar,<br>
-			I'm Computer Science Engg.
-		</h3>
+	<!-- HOME PAGE ENDS -->
+
+	<!-- SKILLS -->
+	<div id="skills" class="container-fluid" style="background-color: #f5f0f0; padding-top: 60px; height: 100vh">
+		<center><h1 style=" color: #181B27; font-weight: 900"> SKILL'S </h1></center>
+		<div class="row" style="margin-top: 20px;">
+			<div class="col-sm-3">
+				<div class="panel panel-primary boxx">
+					<div class="panel-heading hding">
+						<h2>Idea!</h2>
+					</div>
+					<div class="panel-body imag">
+						<img class="panel-img-design" src="Images/idea.png" >
+					</div>
+					<div class="panel-footer txt">
+						<p>IDEA, is the word that means alot itself, if you have no idea the nothing going to worth.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-3">
+				<div class="panel panel-primary boxx">
+					<div class="panel-heading hding">
+						<h2>Design</h2>
+					</div>
+					<div class="panel-body imag">
+						<img class="panel-img-design" src="Images/design.png" >
+					</div>
+					<div class="panel-footer txt">
+						<p>Design is the baseline for every project. I sketch and wireframe interfaces focusing on the quality of user experience, content structure and simple interactions. I also believe that web design is all about crafting an interface that communicates function, is usable and accessible and exudes the right emotion and feelings.</p>
+					</div>
+				</div>				
+			</div>
+
+			<div class="col-sm-3">
+				<div class="panel panel-primary boxx">
+					<div class="panel-heading hding">
+						<h2>Code</h2>
+					</div>
+					<div class="panel-body imag">
+						<img class="panel-img-design" src="Images/code.png" >
+					</div>
+					<div class="panel-footer txt">
+						I build user interfaces with HTML, CSS with a touch of frameworks like Bootstrap.I also have knowledge of languages Core Java. And i can build Android Apps.
+					</div>
+				</div>				
+			</div>
+
+			<div class="col-sm-3">
+				<div class="panel panel-primary boxx">
+					<div class="panel-heading hding">
+						 <h2>Responsive</h2>
+					</div>
+					<div class="panel-body imag">
+						<img class="panel-img-design" src="Images/respon.png" >
+					</div>
+					<div class="panel-footer txt">
+						Web Develpoment, i mainly works on frontend designing. I design as per user point of view. Designed the website that should responds to the user's behavior and responsivly fits on any type of devices like mobile etc I believe that a web page have to easy, that user can operate that even eyes are closed
+					</div>
+				</div>				
+			</div>				
+		</div>
+	<div class="container seprater">
+		
 	</div>
+	</div>
+	<!-- SKILLS ENDS -->
+
+	<!-- ABOUT ME -->
+	<div id="bout" class="container-fluid" style="padding-top: 50px;">
+		<div class="col-md-12 col-xs-12 text-center">
+			<h1 style=" color: #181B27; font-weight: 900"> ABOUT ME </h1>
+			<h4 style="letter-spacing: 18">ITS ALL ABOUT ME</h4>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-1"></div>
+				<div class="col-lg-4 text-center">
+					<div >
+						<center>
+						<img class="img-responsive img-rounded prof-edit" src="images/profDisp.gif"/>
+						</center>					
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-12 text-justify">
+					<br>
+						<p class="skii"> Hi, I’m Varun Tanwar. I am a CSE graduate.
+						I primarily a web developer and programmer. Since beginning my journey as a Designer, 
+						I've been consulted for startups, and collaborated with talented people to create digital products. I am a energetic and imaginative young web developer and I'm quietly confident, naturally curious, and perpetually improving my chops.</p>
+						<p class="skii">My work is something that i do with a lot honesty, appetite and commitment.</p>	
+						<p class="skii"> I am highly aware about latest industry trends and practices, particularly in regard to accessibility, usability,emerging technologies, and open source content management systems.</p>
+						<p class="skii">In my spare time, i like to visit new places,i love learning new things, skill and meeting peoples
+						I also like exploring new cuisine, dishes and different type of food you can say i am a little foodie too.</p>
+						<p class="skii">And I am big Cricket Enthusiast, in short Cricket is &hearts;.</p>
+						<p class="skii">Web is all about "LOOK AND FEEL". </p>
+						<p class="skii">What I do?<br>
+					 	1.Web Dev (primarily frontend), <br>
+						2.Designing.</p>
+					
+				</div>
+				<div class="col-lg-1"></div>
+			</div>
+		</div>
+		<div class="container seprater">		
+		</div>
+	</div>
+	<!-- ABOUT ME ENDS -->
+
+	<!-- CONTACT ME -->
+  	<div id="mee" class="container-fluid" style="padding: 60px 0 0 0; height: 100vh"> 
+  		<div class="col-lg-12 text-center">
+			<h1 style=" color: #181B27; font-weight: 900"> CONTACT ME </h1>
+			<h4 style="letter-spacing: 18">JUST A CLICK AWAY</h4>
+		</div>
+
+        <div class="container contact-form" style=" margin-top: 12em">
+
+            <form method="post"  action="mailto:varuu.tanwar@gmail.com?subject=&body=" enctype="text/plain">
+               <div class="row forme" >
+               	<div class="col-lg-6 con-left" style="border: 0px solid black; box-shadow: inset 0 0 10px black"> 
+            	    <br>
+                	    <div>
+							<div class="col-lg-5"><p class="conn-left">MAIL</p></div>
+							<div class="col-lg-7">
+								<p><a class="conn" href="mailto:varuu.tanwar@gmail.com?subject=&body=">varuu.tanwar@gmail.com</a> </p>
+					  		</div>
+					  		<br>  
+                   		</div>
+                   		<hr style=" background-color: #777777; border: none; height: 1px; ">
+                	    <div>
+							<div class="col-lg-5"><p class="conn-left">PHONE</p></div>
+							<div class="col-lg-7">
+								<p><a class="conn" href="tel:888-261-5916">+91-888-261-5916</a></p>
+								<p><a class="conn" href="tel:767-869-8700">+91-767-869-8700</a></p>
+					  		</div>  
+					  		<br><br>
+                   		</div>
+                   		<hr style="background-color: #777777; border: none; height: 1px">
+                	    <div>
+							<div class="col-lg-5 "><p class="conn-left">FOLLOW ME</p></div>
+							<div class="col-lg-7" >
+								<a class="social-a-tag" href="https://github.com/varuu09" target="parent">
+									<img class="log-img" src="Images/git.png"> 
+								</a>
+								<a class="social-a-tag" href="https://www.linkedin.com/in/varun-tanwar-425541166/" target="parent">
+									<img class="log-img" src="Images/linkedin.png"> 
+								</a>
+								<a class="social-a-tag" href="https://www.instagram.com/varun.tanwar/" target="parent">
+									<img class="log-img" src="Images/ig.png"> 
+								</a>
+					  		</div>
+					  		<br><br>  
+                   		</div>
+                	</div>
+
+                    <div class="col-md-6 ">
+                        <div class=" form-group">
+                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" required/>
+                        </div>
+                        <div class=" form-group">
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" required/>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 50px;" required></textarea>
+                        </div>
+                        <center>
+                        <div class="form-group ">
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Send" />
+                        </div>
+                    </center>
+                    </div>
+                </div>
+            </form>
+        </div>
+		<br>
+		<center>
+			<div class="foot">
+			<a href="#home" title="To Top" >
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</a>
+			<p> MADE WITH &hearts; | DESIGN BY ME | 2k18 &copy; </p>
+		</div>
+			
+		</center> 
+		<div class="container-fluid text-center borderCheck" style="background-color: #F4F0F0; box-sizing: border-box; padding: 0;">
+				<div class="container-fluid borderCheck" style="padding: 0; ">
+					<center>
+						<img class="img-responsive img-rounded" src="images/AbtFooter.png"/>
+					</center>					
+				</div>
+			</div>
+		</div>
+		<!-- CONTACT ME ENDS -->
 </body>
 </html>
