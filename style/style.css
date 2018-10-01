@@ -1,0 +1,163 @@
+/*Color used for text #181B27*/
+
+.borderCheck{
+	border: 0px solid red !important;
+}
+.seprater{
+	margin-top: 1em; 
+	border-bottom: 5px solid #282822; 
+}
+body{
+background-color: #f5f0f0;
+}
+/*Custom tags*/
+.design-body-img{
+	background-image: url("../images/bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.design-profile-img{
+	height: 22em;
+	width: 22em;
+	border-bottom: 9px dashed black;
+	border-left: 9px dashed black;
+	/*border-right: 9px dashed black;*/
+}
+
+.design-profile-txt{
+	background-color: black;
+	/*letter-spacing: 5px;*/
+	font-size: 0.8em;
+	background-color: #181B27;
+}
+
+
+.panel{
+	
+}
+
+.boxx{
+	border-color: #606060 !important;
+}
+
+.panel:hover {
+	box-shadow: 5px 0px 20px #3C3C3C;
+}
+
+.hding{
+	background-color: #424242 !important;
+	text-align: center;
+}
+
+.txt{
+	background-color: #424242 !important;
+	color:#CFD8DC;
+	text-align: justify;
+	overflow: hidden;
+	height: 13.5em
+}
+
+.imag{
+	background-color: #FAFAFA;
+	text-align: center;
+}
+
+.skii{
+	font-size: 1.1em;
+	color: #818181;
+}
+
+.skii::first-letter{
+	font-size: 1.6em;
+	color: #3C3C3C;
+}
+
+#mee{
+	background-color: #f5f0f0;
+}
+
+
+#bout{
+	background-color: #f5f0f0;
+}
+
+
+.contact-form .form-control{
+    border-radius: 1rem;
+}
+.contact-form form{
+    padding: 10px 0 0 0;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #FFFF00;
+    font-weight: 600;
+    color: #000000;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #3C3C3C;
+    border: none;
+    cursor: pointer;
+}
+.form-group input{
+	transition: box-shadow 0.5s;
+	height: 5vh;
+}
+.form-group textarea{
+	height: 18vh !important;
+	transition: box-shadow 0.5s;
+}
+
+.form-group input:hover{
+	box-shadow: 5px 0px 20px #3C3C3C;
+}
+.form-group textarea:hover{
+	box-shadow: 5px 0px 20px #3C3C3C;
+}
+
+.conn-left{
+	width: 60%;
+    border: none;
+    border-radius: 1rem;
+	background-color: #FFFF00;
+	color: #212121;
+	font-weight: 550;
+	text-align: center;
+}
+
+.conn{
+	color: #757575;
+	text-decoration: none !important; 
+}
+
+.conn:hover{
+	color: #212121;
+}
+
+.log-img{
+	height: 2em;
+	width: 2em;	
+}
+.log-img:hover{
+ box-shadow:  5px 0px 20px #3C3C3C;
+ border-radius: 20px;
+}
+.social-a-tag{
+	text-decoration: none !important;
+}
+
+
+.foot{
+	font-weight: 800;
+}
