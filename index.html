@@ -13,33 +13,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<!-- SCRIPT -->
-	<script>
-		$(document).ready(function(){
-		  $(".foot a, .navbar a, footer a[href='#myNav']").on('click', function(event) {
-		  if (this.hash !== "") {
-			event.preventDefault();
-			var hash = this.hash;
-			$('html, body').animate({
-			  scrollTop: $(hash).offset().top
-			}, 900, function(){
-			  window.location.hash = hash;
-			  });
-			}
-		  });
-		})
-	</script>
-	<!-- SCRIPT ENDS -->
 </head>
 
 <body class="design-body-img" id="home">
 
 	<!-- ON START MODAL -->
-	<script type="text/javascript">
-	    $(window).on('load',function(){
-	        $('#myModal').modal('show');
-	    });
-	</script>
+	
   	<div class="modal fade" id="myModal" role="dialog">
     	<div class="modal-dialog">
     		<!-- MODAL CONTENT -->
@@ -298,5 +277,8 @@
 			</div>
 		</div>
 		<!-- CONTACT ME ENDS -->
+
+	<script lang="javascript" type="text/javascript" src="script1.js">	
+	</script>
 </body>
 </html>
